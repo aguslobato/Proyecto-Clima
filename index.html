@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <button class="logo" id="openPanelLeft">ADIDAS</button>
+        <button class="user-icon" id="openPanel">&#128100;</button>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Panel deslizante Izquierda -->
+    <div class="side-panel-left" id="sidePanelLeft">
+        <button class="close-btn" id="closePanelLeft">&times;</button>
+        <div class="bg-grey-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <h5><b>Climatizacion</b></h5>
+                        <a href="">
+                            <div class="card-grey">
+                                <span><i class="bi icon-small bi-house-door"></i></span>
+                                <h4>Residencial</h4>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card-grey">
+                                <span><i class="bi icon-small bi-building"></i></span>
+                                <h4>Comercial</h4>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card-grey">
+                                <span><i class="bi icon-small bi-yelp"></i></span>
+                                <h4>Soluciones Sustentables</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <h5><b>Equipamiento para cocinas</b></h5>
+                        <a href="">
+                            <div class="card-grey">
+                                <span><i class="bi icon-small bi-bing"></i></span>
+                                <h4>Electrodomesticos</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <h5><b>Sistemas de Climatizacion</b></h5>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button card-grey" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span><i class="bi icon-small bi-hdmi-fill"></i></span>
+                                    <h4>Productos</h4>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="">Splits y Multisplits</a></li>
+                                            <li><a href="">VRF y VRF S</a></li>
+                                            <li><a href="">Calentadores de Agua LG</a></li>
+                                            <li><a href="">Francoils</a></li>
+                                            <li><a href="">Climatizadores de Piscina</a></li>
+                                            <li><a href="">Calderas</a></li>
+                                            <li><a href="">Radiadores</a></li>
+                                            <li><a href="">Piso Radiante</a></li>
+                                            <li><a href="">Termotanques Solares</a></li>
+                                            <li><a href="">Sistema Autonomo Orkli</a></li>
+                                            <li><a href="">Calefactor Exterior</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <h5><b>Contactanos</b></h5>
+                        <div class="card-grey">
+                            <a href="">Escribinos</a>
+                        </div>
+                        <div class="card-grey">
+                            <a href="">Trabaja con nosotros</a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="card-grey px-3 rounded-4">
+                            <span><i class="bi icon-medium bi-person-arms-up"></i></span>
+                            <div>
+                                <span class="border-grey">Profesionales en Climatizacion</span>
+                                <h3>Estamos para asesorarte en tus proyectos</h3>
+                                <a href="" class="link-outline-white">Conoce mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="card-grey px-3 rounded-4">
+                            <span><i class="bi icon-medium bi-houses"></i></span>
+                            <div>
+                                <span class="border-grey">Obras</span>
+                                <h3>Soluciones para casas en barrios cerrados</h3>
+                                <a href="" class="link-outline-white">Conoce mas</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel deslizante Derecha-->
+    <div class="side-panel" id="sidePanel">
+        <button class="close-btn" id="closePanel">&times;</button>
+        <div class="bg-grey">
+            <div class="container">
+                <h3 class="text-center">HOLA AGUSTIN</h3>
+                <a href="">IR A TU CUENTA</a>
+                <a href="">HISTORIAL DE PUNTOS ADICLUB</a>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button id="openPanelDownload" class="border-0">
+                            <div class="card-white border-grey" >
+                                <h5>Descarga la app de adidas</h5>
+                                <p>Recibi alertas sobre lanzamientos, promociones y ofertas para miembros</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <a href="">
+                            <div class="card-white border-grey">
+                                <h5>Sali a correr y gana puntos</h5>
+                                <p>Descarga la app de adidas Running y gana 2 puntos por cada kilometro registrado</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="">
+                            <div class="card-white border-grey">
+                                <h5>Solo en adiClub</h5>
+                                <p>Productos exclusivos solo para miembros</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="">
+                            <div class="card-white border-grey">
+                                <h5>Oferta especial adiClub x LES MILLS+ - Solo en la app</h5>
+                                <p>30 dias gratis y 50% menos en la suscripcion Premium</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="">
+                            <div class="card-white border-grey">
+                                <h5>Tenemos 3 sorteos para vos</h5>
+                                <ul>
+                                    <li>¡La nueva camiseta de Boca Juniors puede ser...</li>
+                                    <li>ADIDAS X MINECRAFT</li>
+                                    <li>¡LA MAGIA DE MESSI EN TUS MANOS!</li>
+                                </ul>
+                                <p>Ver todos los sorteos disponibles</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="">
+                            <div class="card-white border-grey">
+                                <h5>Encontra la calma con adiClub</h5>
+                                <p>Obtene acceso gratuito a la aplicacion #1 para dormir, meditar y relajarte.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel deslizante de descargar la app -->
+    <div class="side-panel" id="sidePanelDownload">
+        
+        <div class="bg-grey">
+            <div class="container">
+                <div class="d-flex justify-content-start align-items-center">
+                    <button class="close-btn" id="closePanelDownload">&larr;</button>
+                    <h3 class="text-center mb-0 ms-5">SOLO EN LA APP</h3>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container">
+                <h2>DISPONIBLE UNICAMENTE EN LA APP DE ADIDAS</h2>
+                <p>Entra en la app para acceder a este y otros beneficios de adiClub y aprovecha al maximo tu membresia.</p>
+                <p>Escanea el codigo QR para acceder a la app de adidas</p>
+                <img src="https://www.adidas.com.ar/static/glass/mbr-sidepanel-mf/side-panel-mf/main/images/app-only-section/qr-codes/app-download-tile.webp" alt="" class="img-fluid img-qr">
+            </div>
+            <img src="https://www.adidas.com.ar/static/glass/mbr-sidepanel-mf/side-panel-mf/main/images/app-only-section/hero-image.webp" alt="" class="img-fluid img-big">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+</body>
+</html>
